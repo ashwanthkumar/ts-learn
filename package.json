@@ -1,0 +1,17 @@
+{
+  "name": "ts-learn",
+  "version": "1.0.0",
+  "description": "Learning TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "typescript": "2.5.2",
+    "tslint": "^5.7.0",
+    "ts-node": "^3.3.0",
+    "nodemon": "^1.12.1"
+  },
+  "author": "Ashwanth Kumar",
+  "license": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+}
