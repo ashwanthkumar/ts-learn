@@ -1,6 +1,6 @@
 import * as express from "express";
 import * as process from "process";
-import {IndexRouter} from "./routers";
+import {HealthCheckRouter} from "./routers";
 
 class Server {
     app: express.Application;
@@ -11,7 +11,7 @@ class Server {
 
     attachRoutes() {
         var router: express.Router = express.Router();
-        new IndexRouter().attach(router);
+        new HealthCheckRouter().attach(router);
         this.app.use(router);
     }
 

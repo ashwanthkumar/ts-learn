@@ -1,11 +1,11 @@
 import {Request, Response, Router, NextFunction} from "express";
 
-export class IndexRouter {
+export class HealthCheckRouter {
     attach(router: Router): void {
-        router.get('/', this.index)
+        router.get('/health', this.healthCheck)
     }
 
-    index(req: Request, res: Response, next: NextFunction) {
+    healthCheck(req: Request, res: Response, next: NextFunction) {
         res.status(200).send({"status": "OK"});
     }
 }
